@@ -3,5 +3,5 @@
 using namespace std;
 
 void Matan_semer::theory_testus(){
-    cout << "ÀÀÀÀÀÀÀ ÎÏßÒÜ ÒÅÎÐÂÎÏÐÎÑ ÏÎ ÌÀÒÀÍÓ(!)";
+    cout << "ÐÐ°Ð°Ð°Ð°Ð°Ð° Ð¾Ð¿ÑÑ‚ÑŒ Ñ‚ÐµÐ¾Ñ€Ð¾Ð¿Ñ€Ð¾Ñ Ð¿Ð¾ Ð¼Ð°Ñ‚Ð°Ð½Ñƒ!!!" << endl;
 }

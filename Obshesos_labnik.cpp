@@ -3,5 +3,5 @@
 using namespace std;
 
 void Obshesos_labnik::make_redo_laba(){
-	cout<<"Не переделаете, пойдёте на Украину!"
+	cout<< "Не переделаете, пойдёте на Украину!" << endl;
 }

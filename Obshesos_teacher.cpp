@@ -3,5 +3,5 @@
 using namespace std;
 
 void Obshesos_teacher::change_a_sign() {
-	cout << "Ну если тут поменять местами пределы интегрирования...";
+	cout << "Ну если тут поменять местами пределы интегрирования..." << endl;
 }

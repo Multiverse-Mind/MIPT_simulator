@@ -4,6 +4,6 @@
 
 class Obshesos_labnik : public Obshesos_teacher {
 public:
-	void make_redo_laba()
+	void make_redo_laba();
 };
-#endif // OBSHESOS_LABA_HPP_INCLUDED
+#endif // OBSHESOS_LABNIK_HPP_INCLUDED

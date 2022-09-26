@@ -32,7 +32,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="Lector.cpp" />
+		<Unit filename="Lector.hpp" />
+		<Unit filename="Matan_lector.cpp" />
+		<Unit filename="Matan_lector.hpp" />
+		<Unit filename="Matan_semer.cpp" />
+		<Unit filename="Matan_semer.hpp" />
+		<Unit filename="Matan_teacher.cpp" />
+		<Unit filename="Matan_teacher.hpp" />
+		<Unit filename="Teacher.cpp" />
+		<Unit filename="Teacher.hpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

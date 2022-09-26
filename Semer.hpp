@@ -2,7 +2,7 @@
 #define SEMER_HPP_INCLUDED
 class Semer{
 public:
-	void increase_siminar_duration();
+	void make_weekend_seminar();
 };
 
 #endif // SEMER_HPP_INCLUDED
