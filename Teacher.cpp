@@ -3,5 +3,22 @@
 using namespace std;
 
 void Teacher::teach(){
-    cout << "Препод чему-то кого-то научил типа..." << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ..." << endl;
+};
+
+void Teacher::set_hirsh_index(int a) {
+    this->hirsh_index = a;
+};
+
+int Teacher::get_hirsh_index() {
+    return this->hirsh_index;
 }
+
+/*
+int main(){
+    Teacher Shige;
+    Shige.set_hirsh_index(5);
+    Shige.moan();
+    cout << Shige.get_hirsh_index() << endl;
+}
+ */

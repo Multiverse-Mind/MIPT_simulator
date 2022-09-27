@@ -33,12 +33,22 @@ void Human_being::moan() {
     cout << "AAAAUUUUUGHHHHHHHHH" << endl;
 }
 
+string Human_being::get_name() {
+    return this->name;
+}
+
+int Human_being::get_age() {
+    return this->age;
+}
+
 
 int main() {
     cout << "sdasd" << endl;
-    Human_being Ger(5, "German");
+    Human_being Ger(5, "gerold");
     Ger.moan();
-    Ger.set_avg_sleep(5);
+    Ger.set_age(6);
+    Ger.set_name("Germany");
+    cout << Ger.get_age() << ' ' << Ger.get_name() << endl;
 
 
 }

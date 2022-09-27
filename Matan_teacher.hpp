@@ -4,7 +4,9 @@
 
 class Matan_teacher: public Teacher {
     public:
-        void prove_FubiniT();
+    Matan_teacher(int age, string name) : Teacher(age, name) {}
+
+    void prove_FubiniT();
 };
 
 #endif // MATAN_TEACHER_HPP_INCLUDED

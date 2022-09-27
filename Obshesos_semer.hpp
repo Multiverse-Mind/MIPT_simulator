@@ -5,6 +5,8 @@
 
 class Obshesos_semer : public Semer, public Obshesos_teacher {
 public:
-	void tell_about_solution_way();
+    Obshesos_semer(int age, string name) : Obshesos_teacher(age, name) {}
+
+    void tell_about_solution_way();
 };
 #endif // OBSHESOS_SEMER_HPP_INCLUDED

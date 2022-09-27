@@ -25,6 +25,9 @@ public:
     void sleep(int a);
     void moan();
 
+    string get_name();
+    int get_age();
+
 };
 
 #endif //MIPT_SIMULATOR_HUMAN_BEING_H
