@@ -30,7 +30,7 @@ void Human_being::set_avg_sleep(int in_set_avg_sleep) {
 }
 
 void Human_being::moan() {
-    cout << "AAAAUUUUUGHHHHHHHHH" << endl;
+    cout << "Yamete" << endl;
 }
 
 string Human_being::get_name() {
