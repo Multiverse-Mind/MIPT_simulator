@@ -41,7 +41,7 @@ int Human_being::get_age() {
     return this->age;
 }
 
-
+/*
 int main() {
     cout << "sdasd" << endl;
     Human_being Ger(5, "gerold");
@@ -52,3 +52,4 @@ int main() {
 
 
 }
+*/
