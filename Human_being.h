@@ -5,6 +5,9 @@
 #ifndef MIPT_SIMULATOR_HUMAN_BEING_H
 #define MIPT_SIMULATOR_HUMAN_BEING_H
 #include <string>
+#include <iostream>
+
+using namespace std;
 
 class Human_being{
     int weight, hight, avg_sleep, age;
@@ -13,13 +16,13 @@ class Human_being{
 public:
     Human_being(int age, string name): age(age), name(name) {};
 
-    void set_weight();
-    void set_hight();
-    void set_avg_sleep();
-    void set_age();
-    void set_name();
+    void set_weight(int a);
+    void set_hight(int a);
+    void set_avg_sleep(int a);
+    void set_age(int a);
+    void set_name(string a);
 
-    void sleep();
+    void sleep(int a);
     void moan();
 
 };
