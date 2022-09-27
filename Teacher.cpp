@@ -16,7 +16,7 @@ int Teacher::get_hirsh_index() {
 
 /*
 int main(){
-    Teacher Shige;
+    Teacher Shige(5, "Shige");
     Shige.set_hirsh_index(5);
     Shige.moan();
     cout << Shige.get_hirsh_index() << endl;
