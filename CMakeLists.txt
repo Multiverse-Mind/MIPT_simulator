@@ -27,4 +27,4 @@ add_executable(MIPT_simulator
         Semer.cpp
         Semer.hpp
         Teacher.cpp
-        Teacher.hpp Student.hpp Student.cpp Danya.cpp Danya.hpp)
+        Teacher.hpp Student.hpp Student.cpp Danya.cpp Danya.hpp Normie.cpp Normie.hpp)
