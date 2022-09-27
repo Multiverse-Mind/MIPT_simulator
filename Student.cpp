@@ -5,17 +5,48 @@
 #include <iostream>
 #include "Student.hpp"
 
-void Student::set_avg(int a) {
+void Student::set_avg(char a) {
     this->avg = a;
 }
 
-int Student::get_avg() {
+char Student::get_avg() {
     return avg;
 }
-/*
+
+void Student::set_know(int i, char a) {
+    this->knowledge[i] = a;
+}
+
+char Student::get_know(int i) {
+    return this->knowledge[i];
+}
+
+
+void Student::add_know(int i) {
+    int deg = 0;
+    char know = knowledge[i];
+
+    //cout << int(know) << endl;
+
+    while ((1 << deg) < (64 - know)){
+        ++deg;
+    }
+
+    know += deg;
+    knowledge[i] = know;
+
+    //cout << int(know) << endl;
+
+}
+
 int main(){
     Student Jenny(5, "Jenny");
-    Jenny.set_avg(8.0);
-    cout << Jenny.get_avg() <<endl ;
+
+    Jenny.set_know(0, 0);
+    for (int i = 0; i < 14; ++i) {
+
+    Jenny.add_know(0);}
+
+
+    cout << int(Jenny.get_know(0)) << endl;
 }
-*/
