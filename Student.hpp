@@ -8,18 +8,19 @@
 
 
 class Student: public Human_being {
-    char avg;
-    char knowledge[3];
+    float avg;
+    char knowledge[3] = {32, 32, 32}; // Нулевой элемент - знания по матану, первый элемент - знания по
+    // общесосу, второй элемент - знания по лабам
 
 public:
-    Student(int age, string name) : Human_being(age, name), knowledge({32, 32, 32 })  {}
+    Student(string name, int age, float avg) : Human_being(name, age), avg(avg) {}
 
     void set_know(int i, char a);
     void set_avg(char a);
 
 
-    char get_know(int i);
-    char get_avg();
+    int get_know(int i);
+    float get_avg();
 
 
     void add_know(int i);

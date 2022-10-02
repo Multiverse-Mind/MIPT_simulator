@@ -9,7 +9,7 @@ void Student::set_avg(char a) {
     this->avg = a;
 }
 
-char Student::get_avg() {
+float Student::get_avg() {
     return avg;
 }
 
@@ -17,7 +17,7 @@ void Student::set_know(int i, char a) {
     this->knowledge[i] = a;
 }
 
-char Student::get_know(int i) {
+int Student::get_know(int i) {
     return this->knowledge[i];
 }
 
@@ -38,7 +38,7 @@ void Student::add_know(int i) {
     //cout << int(know) << endl;
 
 }
-
+/*
 int main(){
     Student Jenny(5, "Jenny");
 
@@ -50,3 +50,4 @@ int main(){
 
     cout << int(Jenny.get_know(0)) << endl;
 }
+*/

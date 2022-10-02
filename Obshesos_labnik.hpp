@@ -4,7 +4,7 @@
 
 class Obshesos_labnik : public Obshesos_teacher {
 public:
-    Obshesos_labnik(int age, string name) : Obshesos_teacher(age, name) {}
+    Obshesos_labnik(string name, int age) : Obshesos_teacher(name, age) {}
 
     void make_redo_laba();
 };

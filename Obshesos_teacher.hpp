@@ -4,7 +4,7 @@
 
 class Obshesos_teacher : public Teacher {
 public:
-    Obshesos_teacher(int age, string name) : Teacher(age, name) {}
+    Obshesos_teacher(string name, int age) : Teacher(name, age) {}
 
     void change_a_sign();
 };

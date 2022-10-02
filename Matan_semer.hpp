@@ -5,7 +5,7 @@
 
 class Matan_semer: public Semer, public Matan_teacher {
     public:
-    Matan_semer(int age, string name) : Matan_teacher(age, name) {}
+    Matan_semer(string name, int age) : Matan_teacher(name, age) {}
 
     void theory_testus();
 };

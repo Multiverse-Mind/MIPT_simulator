@@ -4,7 +4,7 @@
 
 class Matan_teacher: public Teacher {
     public:
-    Matan_teacher(int age, string name) : Teacher(age, name) {}
+    Matan_teacher(string name, int age) : Teacher(name, age) {}
 
     void prove_FubiniT();
 };

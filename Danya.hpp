@@ -10,7 +10,7 @@
 class Danya : public Student{
 
 public:
-    Danya(int age, string name): Student(age, name) {}
+    Danya(string name, int age): Student(name, age, 9.5) {}
 
     void correct_a_teacher();
 };

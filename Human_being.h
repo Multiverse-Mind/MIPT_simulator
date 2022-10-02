@@ -10,14 +10,17 @@
 using namespace std;
 
 class Human_being{
-    int weight, hight, avg_sleep, age;
+    int weight = 60;
+    int height = 160;
+    int avg_sleepage = 0;
+    int age;
     string name;
 
 public:
-    Human_being(int age, string name): age(age), name(name) {};
+    Human_being(string name, int age): name(name), age(age) {};
 
     void set_weight(int a);
-    void set_hight(int a);
+    void set_height(int a);
     void set_avg_sleep(int a);
     void set_age(int a);
     void set_name(string a);

@@ -5,7 +5,7 @@
 
 class Matan_lector: public Lector, public Matan_teacher {
     public:
-    Matan_lector(int age, string name) : Matan_teacher(age, name) {}
+    Matan_lector(string name, int age) : Matan_teacher(name, age) {}
 
     void tell_a_shit();
 };

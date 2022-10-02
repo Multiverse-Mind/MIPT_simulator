@@ -4,7 +4,7 @@
 #include "Lector.hpp"
 class Obshesos_lector : public Lector, public Obshesos_teacher {
 public:
-    Obshesos_lector(int age, string name) : Obshesos_teacher(age, name) {}
+    Obshesos_lector(string name, int age) : Obshesos_teacher(name, age) {}
 
     void call_Dmitriy();
 };

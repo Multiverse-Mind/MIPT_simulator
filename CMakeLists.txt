@@ -27,4 +27,4 @@ add_executable(MIPT_simulator
         Semer.cpp
         Semer.hpp
         Teacher.cpp
-        Teacher.hpp Student.hpp Student.cpp Danya.cpp Danya.hpp Normie.cpp Normie.hpp Chiller_griller.cpp Chiller_griller.hpp main.cpp)
+        Teacher.hpp Student.hpp Student.cpp Danya.cpp Danya.hpp Normie.cpp Normie.hpp Chiller_griller.cpp Chiller_griller.hpp main.cpp Group.hpp)

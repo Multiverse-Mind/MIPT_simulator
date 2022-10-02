@@ -7,13 +7,18 @@
 #include "Student.hpp"
 
 class Chiller_griller : public Student {
-    int num_of_gals;
+    int num_of_gals = 1;
+
 public:
-    Chiller_griller(int age, string name): Student(age, name){}
+    Chiller_griller(string name, int age): Student(name, age, 5) {}
+
+    void take_a_leap_year();
 
     void set_num_of_gals(int a);
-    void take_a_leap_year();
+
     int get_num_of_gals();
+
+
 };
 
 
