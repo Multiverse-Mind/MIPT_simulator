@@ -10,7 +10,31 @@ void Student::set_avg(char a) {
 }
 
 float Student::get_avg() {
-    return avg;
+    return this->avg;
+}
+
+void Student::set_chsv(int a) {
+    this->chsv = a;
+}
+
+int Student::get_chsv() {
+    return this->chsv;
+}
+
+void Student::change_chsv(int i) {
+    this->chsv = this->chsv + i;
+}
+
+void Student::set_mana(int a) {
+    this->mana = a;
+}
+
+int Student::get_mana() {
+    return this->mana;
+}
+
+void Student::change_mana(int i) {
+    this->mana = this->mana + i;
 }
 
 void Student::set_know(int i, char a) {
@@ -21,10 +45,9 @@ int Student::get_know(int i) {
     return this->knowledge[i];
 }
 
-
 void Student::add_know(int i) {
     int deg = 0;
-    char know = knowledge[i];
+    char know = this->knowledge[i];
 
     //cout << int(know) << endl;
 
@@ -33,11 +56,16 @@ void Student::add_know(int i) {
     }
 
     know += deg;
-    knowledge[i] = know;
+    this->knowledge[i] = know;
 
     //cout << int(know) << endl;
 
 }
+
+void Student::delete_know(int i) {
+    this->knowledge[i]--;
+}
+
 /*
 int main(){
     Student Jenny(5, "Jenny");

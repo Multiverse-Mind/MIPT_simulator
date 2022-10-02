@@ -9,7 +9,7 @@
 class Normie : public Student {
 
 public:
-    Normie (string name, int age): Student(name, age, 7.25) {}
+    Normie (string name, int age): Student(name, age, 7.25, 100) {}
 
     void wake_up_for_para();
 };

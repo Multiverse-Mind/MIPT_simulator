@@ -10,7 +10,7 @@ class Chiller_griller : public Student {
     int num_of_gals = 1;
 
 public:
-    Chiller_griller(string name, int age): Student(name, age, 5) {}
+    Chiller_griller(string name, int age): Student(name, age, 5, 50) {}
 
     void take_a_leap_year();
 

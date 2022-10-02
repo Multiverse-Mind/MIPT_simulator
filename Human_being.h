@@ -14,9 +14,9 @@ class Human_being{
     int height = 160;
     int avg_sleepage = 0;
     int age;
-    string name;
 
 public:
+    string name;
     Human_being(string name, int age): name(name), age(age) {};
 
     void set_weight(int a);

@@ -7,17 +7,18 @@
 #include "Chiller_griller.hpp"
 #include "Group.hpp"
 #include "Matan_semer.hpp"
+#include "Matan_lector.hpp"
 using namespace std;
 
 
 int main(){
-    Chiller_griller a("", 0);
-    Chiller_griller b("", 0);
-    Normie c("", 0);
-    Normie d("", 0);
-    Danya e("", 0);
-    Danya f("", 0);
-    Matan_semer A("", 0);
+    Chiller_griller a("a", 0);
+    Chiller_griller b("b", 0);
+    Normie c("c", 0);
+    Normie d("d", 0);
+    Danya e("e", 0);
+    Danya f("f", 0);
+    Matan_semer A("A", 0);
     Group group;
     group.chillers.push_back(a);
     group.chillers.push_back(b);
@@ -25,25 +26,34 @@ int main(){
     group.normies.push_back(d);
     group.danyas.push_back(e);
     group.danyas.push_back(f);
+    cout << "Knowledge\tChSV\tMana" << endl;
     for (int i = 0; i < group.chillers.size(); i++){
-        cout << group.chillers[i].get_know(0) << endl;
+        cout << group.chillers[i].get_know(0) << "\t" << group.chillers[i].get_chsv() << "\t" <<
+        group.chillers[i].get_mana() << endl;
     }
     for (int i = 0; i < group.normies.size(); i++){
-        cout << group.normies[i].get_know(0) << endl;
+        cout << group.normies[i].get_know(0) << "\t" << group.normies[i].get_chsv() << "\t" <<
+        group.normies[i].get_mana() << endl;
     }
     for (int i = 0; i < group.danyas.size(); i++){
-        cout << group.danyas[i].get_know(0) << endl;
+        cout << group.danyas[i].get_know(0) << "\t" << group.danyas[i].get_chsv() << "\t" <<
+        group.danyas[i].get_mana() << endl;
     }
     cout << endl;
-    A.teach(&group, 0);
+
+    cout << endl;
+    cout << "Knowledge\tChSV\tMana" << endl;
     for (int i = 0; i < group.chillers.size(); i++){
-        cout << group.chillers[i].get_know(0) << endl;
+        cout << group.chillers[i].get_know(0) << "\t" << group.chillers[i].get_chsv() << "\t" <<
+        group.chillers[i].get_mana() << endl;
     }
     for (int i = 0; i < group.normies.size(); i++){
-        cout << group.normies[i].get_know(0) << endl;
+        cout << group.normies[i].get_know(0) << "\t" << group.normies[i].get_chsv() << "\t" <<
+        group.normies[i].get_mana() << endl;
     }
     for (int i = 0; i < group.danyas.size(); i++){
-        cout << group.danyas[i].get_know(0) << endl;
+        cout << group.danyas[i].get_know(0) << "\t" << group.danyas[i].get_chsv() << "\t" <<
+        group.danyas[i].get_mana() << endl;
     }
     return 0;
 }
