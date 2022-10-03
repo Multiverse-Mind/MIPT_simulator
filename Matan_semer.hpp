@@ -7,7 +7,7 @@ class Matan_semer: public Semer, public Matan_teacher {
     public:
     Matan_semer(string name, int age) : Matan_teacher(name, age) {}
 
-    void theory_testus(Group *group, int chsv_change, int mana_change);
+    void theory_testus(Group *group, int know_loss, int chsv_loss, int mana_loss);
 };
 
 

@@ -4,7 +4,7 @@
 
 class Lector{
     public:
-        void get_late(Group *group);
+        void get_late(Group *group, int mana_profit);
 };
 
 #endif // LECTOR_HPP_INCLUDED

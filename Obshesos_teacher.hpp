@@ -7,7 +7,7 @@ class Obshesos_teacher : public Teacher {
 public:
     Obshesos_teacher(string name, int age) : Teacher(name, age) {}
 
-    void change_a_sign(Group* group);
+    void change_a_sign(Group* group, int obshesos_type, int know_loss, int mana_profit, int chsv_profit);
 };
 
 #endif // OBSHESOS_TEACHER_HPP_INCLUDED

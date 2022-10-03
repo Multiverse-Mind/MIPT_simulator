@@ -6,6 +6,6 @@ class Obshesos_labnik : public Obshesos_teacher {
 public:
     Obshesos_labnik(string name, int age) : Obshesos_teacher(name, age) {}
 
-    void make_redo_laba(Group* group, int chsv_change, int mana_change);
+    void make_redo_laba(Group* group, int chsv_loss, int mana_loss);
 };
 #endif // OBSHESOS_LABNIK_HPP_INCLUDED

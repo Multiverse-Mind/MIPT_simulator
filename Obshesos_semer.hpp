@@ -8,6 +8,6 @@ class Obshesos_semer : public Semer, public Obshesos_teacher {
 public:
     Obshesos_semer(string name, int age) : Obshesos_teacher(name, age) {}
 
-    void tell_obshesosy_solution(Group* group, int chsv_change, int mana_change);
+    void tell_obshesosy_solution(Group* group, int chsv_profit, int mana_loss);
 };
 #endif // OBSHESOS_SEMER_HPP_INCLUDED

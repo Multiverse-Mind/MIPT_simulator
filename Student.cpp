@@ -62,8 +62,8 @@ void Student::add_know(int i) {
 
 }
 
-void Student::delete_know(int i) {
-    this->knowledge[i]--;
+void Student::delete_know(int i, int a) {
+    this->knowledge[i] = this->knowledge[i] - a;
 }
 
 /*

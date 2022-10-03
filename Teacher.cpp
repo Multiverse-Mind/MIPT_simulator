@@ -26,13 +26,10 @@ void Teacher::tell_about_hirsch_index(Group *group){
         group->chillers[i].change_chsv(2 * (this->hirsh_index - 9));
     }
     for (int i = 0; i < group->normies.size(); i++){
-        group->normies[i].change_chsv(1 * (this->hirsh_index - 9));
-    }
-    for (int i = 0; i < group->danyas.size(); i++){
-        group->danyas[i].change_chsv(0 * (this->hirsh_index - 9));
+        group->normies[i].change_chsv(this->hirsh_index - 9);
     }
     cout << "The teacher " << this->name << " tells about his Hirsch index. The students realize what kind of scientist"
-                                            " is teaching them and their chsv changes." << endl;
+                                            " is teaching them and their chsv changes (except of Danyas)." << endl;
 }
 
 void Teacher::set_hirsh_index(int a) {

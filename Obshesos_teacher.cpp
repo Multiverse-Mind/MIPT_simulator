@@ -3,17 +3,21 @@
 #include "Group.hpp"
 using namespace std;
 
-void Obshesos_teacher::change_a_sign(Group* group) {
+void Obshesos_teacher::change_a_sign(Group* group, int obshesos_type, int know_loss, int mana_profit, int chsv_profit) { // obshesos_type = 1 - обычный общесос, obshesos_type = 2 - лабы
     for (int i = 0; i < group->chillers.size(); i++) {
-        group->chillers[i].delete_know(4);
-        group->chillers[i].change_mana(-4);
+        group->chillers[i].delete_know(obshesos_type, know_loss);
+        group->chillers[i].change_mana(mana_profit);
     }
     for (int i = 0; i < group->normies.size(); i++) {
-        group->normies[i].change_mana(-2);
+        group->normies[i].change_mana(mana_profit);
     }
     for (int i = 0; i < group->danyas.size(); i++) {
-        group->danyas[i].change_chsv(5); //Всё понял
+        group->danyas[i].change_chsv(chsv_profit);
     } 
-    cout << "Holy shit, the teacher of obshesos " << this->name << "changes the limits of integration" << endl;
+    cout << "Holy shit, the teacher of obshesos " << this->name << " changes the limits of integration. Chillers lose"
+                                                                   " knowledge in this type of obshesos. Chillers and"
+                                                                   " normies gain mana (Hm, obshesos."
+                                                                   " AHAHAHAHAHAHAHAHA!). Danyas gain chsv because"
+                                                                   " they understand this." << endl;
 }
 

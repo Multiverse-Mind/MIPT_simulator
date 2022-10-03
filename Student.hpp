@@ -34,7 +34,7 @@ public:
     void change_mana(int a);
 
 
-    void delete_know(int i);
+    void delete_know(int i, int a);
 };
 
 #endif //MIPT_SIMULATOR_STUDENT_HPP
