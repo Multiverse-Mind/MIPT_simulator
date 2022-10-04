@@ -16,7 +16,7 @@ class Student: public Human_being {
     char debts[3] = {0,0,0};
 
 public:
-    Student(string name, int age, float avg, int mana) : Human_being(name, age) {}
+    Student(string name, int age, float avg, int mana) : Human_being(name, age), avg(avg), mana(mana) {}
 
     void set_know(int i, char a);
     void set_avg(char a);

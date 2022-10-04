@@ -97,6 +97,10 @@ int main(){
 
     Jenny.set_debt(1, 15);
     cout << int(Jenny.get_debt(1)) << endl;
+
+    Jenny.change_mana(2009238123);
+
+    cout << Jenny.get_mana() << endl;
 }
 
 */
