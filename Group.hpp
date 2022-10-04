@@ -13,6 +13,8 @@ struct Group{
     vector<Chiller_griller> chillers;
     vector<Normie> normies;
     vector<Danya> danyas;
+
+    void pb(Chiller_griller a), pb(Normie a), pb(Danya a);
 };
 
 #endif //MIPT_SIMULATOR_GROUP_HPP

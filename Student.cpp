@@ -5,6 +5,15 @@
 #include <iostream>
 #include "Student.hpp"
 
+/*
+Student::Student(string name, int age, float avg, int mana, char *knowledges, char *debtss) {
+    for (int i = 0; i < 3; ++i) {
+        this->knowledge[i] = knowledges[i];
+        this->debts[i] = debtss[i];
+    }
+}
+*/
+
 void Student::set_avg(char a) {
     this->avg = a;
 }
@@ -66,9 +75,17 @@ void Student::delete_know(int i, int a) {
     this->knowledge[i] = this->knowledge[i] - a;
 }
 
+void Student::set_debt(int i, char a) {
+    this->debts[i] = a;
+}
+
+char Student::get_debt(int i) {
+    return this->debts[i];
+}
+
 /*
 int main(){
-    Student Jenny(5, "Jenny");
+    Student Jenny("Jenny", 5, 6, 0);
 
     Jenny.set_know(0, 0);
     for (int i = 0; i < 14; ++i) {
@@ -77,5 +94,9 @@ int main(){
 
 
     cout << int(Jenny.get_know(0)) << endl;
+
+    Jenny.set_debt(1, 15);
+    cout << int(Jenny.get_debt(1)) << endl;
 }
+
 */
