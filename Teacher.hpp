@@ -10,7 +10,7 @@ class Teacher: public Human_being {
 public:
     Teacher(string name, int age) : Human_being(name, age) {};
 
-    void teach(Group *group, char subject, string pair_type, int mana_change);
+    void teach(Group *group, char subject, string pair_type, int mana_loss);
     void tell_about_hirsch_index(Group *group);
 
     void set_hirsh_index(int a);
