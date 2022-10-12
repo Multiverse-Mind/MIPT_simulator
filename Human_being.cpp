@@ -9,7 +9,7 @@ using namespace std;
 
 
 void Human_being::moan() {
-    cout << "Yamete" << endl;
+    cout << "-Yamete" << endl;
 }
 
 void Human_being::sleep(short a) {

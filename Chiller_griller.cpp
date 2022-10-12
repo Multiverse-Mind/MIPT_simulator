@@ -9,7 +9,7 @@ void Chiller_griller::set_num_of_gals(int a) {
 }
 
 void Chiller_griller::take_a_leap_year() {
-    cout << "woaahhhh im gonna go chill" << endl;
+    cout << "-woaahhhh im gonna go chill" << endl;
 }
 
 int Chiller_griller::get_num_of_gals(){

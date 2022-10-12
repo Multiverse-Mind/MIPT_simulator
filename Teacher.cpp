@@ -8,17 +8,20 @@ void Teacher::teach(Group *group, char subject, string pair_type, int mana_loss)
     for (int i = 0; i < group->chillers.size(); i++){
         if (group->chillers[i].get_mana() > 0) {
             group->chillers[i].add_know(subject);
-            group->chillers[i].change_mana(-mana_loss * 2);}
+            group->chillers[i].change_mana(-mana_loss * 2);
+        }
     }
     for (int i = 0; i < group->normies.size(); i++){
         if (group->normies[i].get_mana() > 0) {
-        group->normies[i].add_know(subject);
-        group->normies[i].change_mana(-mana_loss);}
+            group->normies[i].add_know(subject);
+            group->normies[i].change_mana(-mana_loss);
+        }
     }
     for (int i = 0; i < group->danyas.size(); i++){
         if (group->danyas[i].get_mana() > 0) {
-        group->danyas[i].add_know(subject);
-        group->danyas[i].change_mana(-mana_loss / 2);}
+            group->danyas[i].add_know(subject);
+            group->danyas[i].change_mana(-mana_loss / 2);
+        }
     }
     cout << "On the " << pair_type << " teacher " << this->name << " teaches someone something. Plus knowledge and"
                                                                    " minus mana for everyone who came." << endl;
@@ -26,10 +29,14 @@ void Teacher::teach(Group *group, char subject, string pair_type, int mana_loss)
 
 void Teacher::tell_about_hirsch_index(Group *group){
     for (int i = 0; i < group->chillers.size(); i++){
-        group->chillers[i].change_chsv(2 * (this->hirsh_index - 9));
+        if (group->chillers[i].get_mana() > 0) {
+            group->chillers[i].change_chsv(2 * (this->hirsh_index - 9));
+        }
     }
     for (int i = 0; i < group->normies.size(); i++){
-        group->normies[i].change_chsv(this->hirsh_index - 9);
+        if (group->normies[i].get_mana() > 0) {
+            group->normies[i].change_chsv(this->hirsh_index - 9);
+        }
     }
     cout << "The teacher " << this->name << " tells about his Hirsch index. The students realize what kind of scientist"
                                             " is teaching them and their chsv changes (except of Danyas)." << endl;

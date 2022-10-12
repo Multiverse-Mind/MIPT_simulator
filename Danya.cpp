@@ -6,7 +6,7 @@
 #include <iostream>
 
 void Danya::correct_a_teacher() {
-    cout << "Excuse me, there is a mistake" << endl;
+    cout << "-Excuse me, there is a mistake" << endl;
 }
 /*
 int main() {
