@@ -8,19 +8,19 @@ using namespace std;
 
 void Group::pb(Danya a) {
     this->danyas.push_back(a);
-    kids_count();
+    //kids_count();
 }
 
 void Group::pb(Chiller_griller a) {
     this->chillers.push_back(a);
-    kids_count();
+    //kids_count();
 }
 
 void Group::pb(Normie a) {
     this->normies.push_back(a);
-    kids_count();
+    //kids_count();
 }
-
+/*
 void Group::filter(const Group &group) {
     for (auto i: group.chillers) {
         if (i.get_mana() > 0) {
@@ -50,3 +50,4 @@ void Group::kids_count() {
         kids.push_back(&this->danyas[i]);
     }
 }
+*/
