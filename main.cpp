@@ -110,9 +110,12 @@ void day_play(Group *group, Matan_lector &matan_lector, Matan_semer &matan_semer
     obshesos_lector.sleep(14);
     obshesos_semer.sleep(12);
     obshesos_labnik.sleep(10);
-    for (int i = 0; i < group->chillers.size(); i++){
-        group->chillers[i].moan();
+    for (auto ch : group->chillers) {
+        ch.moan();
     }
+    /*for (int i = 0; i < group->chillers.size(); i++) {
+        group->chillers[i].moan();
+    }*/
     for (int i = 0; i < group->normies.size(); i++){
         group->normies[i].wake_up_for_para();
         group->normies[i].sleep(0);
@@ -170,6 +173,7 @@ int main(){
     Danya Danya_Samodelkin("Danya", 19);
     Danya Dr_Livesey("David", 40);
     Danya L("", 20);
+    
     Group group;
     group.pb(Scally_Milano);
     group.pb(Big_Floppa);
@@ -186,6 +190,7 @@ int main(){
     group.pb(Danya_Samodelkin);
     group.pb(Dr_Livesey);
     group.pb(L);
+    
     Matan_lector Karasev("Roma", 45);
     Matan_semer Berezovik("Mark", 24);
     Obshesos_lector Great_Teacher("Onizuka", 25);
