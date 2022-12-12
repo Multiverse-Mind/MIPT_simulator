@@ -1,0 +1,3 @@
+C:/Users/Женя/Desktop/U GOTTA BE TRAINING/infa 3 semestr/проектики/MIPT_simulator/out/build/x64-Debug/CMakeFiles/MIPT_simulator.dir
+C:/Users/Женя/Desktop/U GOTTA BE TRAINING/infa 3 semestr/проектики/MIPT_simulator/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Женя/Desktop/U GOTTA BE TRAINING/infa 3 semestr/проектики/MIPT_simulator/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

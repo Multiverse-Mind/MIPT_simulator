@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MIPT_simulator",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MIPT_simulator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MIPT_simulator-Debug-e835e087de918dcc236d.json",
+					"name" : "MIPT_simulator",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/\u0416\u0435\u043d\u044f/Desktop/U GOTTA BE TRAINING/infa 3 semestr/\u043f\u0440\u043e\u0435\u043a\u0442\u0438\u043a\u0438/MIPT_simulator/out/build/x64-Debug",
+		"source" : "C:/Users/\u0416\u0435\u043d\u044f/Desktop/U GOTTA BE TRAINING/infa 3 semestr/\u043f\u0440\u043e\u0435\u043a\u0442\u0438\u043a\u0438/MIPT_simulator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
