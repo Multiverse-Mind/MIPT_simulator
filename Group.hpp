@@ -5,9 +5,9 @@
 #ifndef MIPT_SIMULATOR_GROUP_HPP
 #define MIPT_SIMULATOR_GROUP_HPP
 #include <vector>
-#include "Chiller_griller.hpp"
-#include "Normie.hpp"
-#include "Danya.hpp"
+#include "students/Chiller_griller.hpp"
+#include "students/Normie.hpp"
+#include "students/Danya.hpp"
 #include <iostream>
 
 struct Group{

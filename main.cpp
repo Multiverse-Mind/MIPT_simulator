@@ -3,15 +3,15 @@
 //
 #include <iostream>
 #include <vector>
-#include "Danya.hpp"
-#include "Normie.hpp"
-#include "Chiller_griller.hpp"
+#include "students/Danya.hpp"
+#include "students/Normie.hpp"
+#include "students/Chiller_griller.hpp"
 #include "Group.hpp"
-#include "Matan_semer.hpp"
-#include "Matan_lector.hpp"
-#include "Obshesos_labnik.hpp"
-#include "Obshesos_lector.hpp"
-#include "Obshesos_semer.hpp"
+#include "teachers/Matan_semer.hpp"
+#include "teachers/Matan_lector.hpp"
+#include "teachers/Obshesos_labnik.hpp"
+#include "teachers/Obshesos_lector.hpp"
+#include "teachers/Obshesos_semer.hpp"
 using namespace std;
 
 
@@ -173,7 +173,7 @@ int main(){
     Danya Danya_Samodelkin("Danya", 19);
     Danya Dr_Livesey("David", 40);
     Danya L("", 20);
-    
+
     Group group;
     group.pb(Scally_Milano);
     group.pb(Big_Floppa);
@@ -190,7 +190,7 @@ int main(){
     group.pb(Danya_Samodelkin);
     group.pb(Dr_Livesey);
     group.pb(L);
-    
+
     Matan_lector Karasev("Roma", 45);
     Matan_semer Berezovik("Mark", 24);
     Obshesos_lector Great_Teacher("Onizuka", 25);
